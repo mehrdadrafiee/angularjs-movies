@@ -12,9 +12,14 @@
 </head>
 <body>
 
-	<div class="mainContainer">
+	<div class="mainContainer" data-ng-app="">
 		<h1>Here is an AngularJS Tutorial</h1>
-		<button class="btn btn-default">Tap me!</button>
+
+		<input type="text" data-ng-model="data.label">
+
+		<input type="text" data-ng-model="data.class">
+
+		<button class="btn {{data.class}}">{{data.label}}</button>
 
 		
 	</div>
